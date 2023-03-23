@@ -1,7 +1,7 @@
 {
   "name": "async-zip-parser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Zip parse function with async iterator.",
   "author": "Mikael Kolehmainen",
   "main": "index.js",
   "directories": {
@@ -10,11 +10,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mikael-Kolehmainen/async-zip-parser.git"
+    "url": "https://github.com/Mikael-Kolehmainen/async-zip-parser.git"
   },
   "license": "ISC",
   "homepage": "https://github.com/Mikael-Kolehmainen/async-zip-parser#readme",
   "dependencies": {
-    "binary": "^0.3.0"
+    "binary": "0.3.0"
   }
 }
