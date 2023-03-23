@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "author": "Mikael Kolehmainen",
-  "main": "asyncZipParser.js",
+  "main": "index.js",
   "directories": {
     "lib": "lib"
   },

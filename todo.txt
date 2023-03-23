@@ -1,0 +1,2 @@
+- Replace vars with const or let.
+- functions to arrow functions.
