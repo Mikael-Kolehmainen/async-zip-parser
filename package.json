@@ -1,0 +1,19 @@
+{
+  "name": "async-zip-parser",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Mikael Kolehmainen",
+  "main": "asyncZipParser.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mikael-Kolehmainen/async-zip-parser.git"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/Mikael-Kolehmainen/async-zip-parser#readme",
+  "dependencies": {
+    "binary": "^0.3.0"
+  }
+}
