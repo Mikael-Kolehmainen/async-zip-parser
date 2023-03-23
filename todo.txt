@@ -1,2 +1,4 @@
 - Replace vars with const or let.
 - functions to arrow functions.
+- change then to async/await syntax.
+- Remove as much of code as possible.
