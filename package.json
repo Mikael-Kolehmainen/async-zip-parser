@@ -1,6 +1,6 @@
 {
   "name": "async-zip-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Zip parse function with async iterator.",
   "author": "Mikael Kolehmainen",
   "main": "index.js",
