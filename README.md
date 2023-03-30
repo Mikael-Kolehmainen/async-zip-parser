@@ -9,3 +9,14 @@ The bug was that the function threw the following error:
 When the Parse function was used with async iterators, in my edited version of the code the bug doesn't exist.
 
 Most of the code is copied from node-unzipper but I made some optimizations and updates according to my needs.
+
+### Usage
+```js
+const zip = fs.createReadStream('input.zip').pipe(asyncZipParser.ParseZip());
+for await (const entry of zip) {
+  const fileName = entry.path;
+  const type = entry.type;
+  const size = entry.vars.uncompressedSize;
+  entry.pipe(fs.createWriteStream(`output/${fileName}`));
+}
+```
