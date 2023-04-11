@@ -14,9 +14,13 @@ Most of the code is copied from node-unzipper but I made some optimizations and 
 ```js
 const zip = fs.createReadStream('input.zip').pipe(asyncZipParser.ParseZip());
 for await (const entry of zip) {
-  const fileName = entry.path;
   const type = entry.type;
-  const size = entry.vars.uncompressedSize;
-  entry.pipe(fs.createWriteStream(`output/${fileName}`));
+  if (type === "File") {
+    const fileName = entry.path;
+    const size = entry.vars.uncompressedSize;
+    entry.pipe(fs.createWriteStream(`output/${fileName}`));
+  } else {
+    entry.autodrain();
+  }
 }
 ```
